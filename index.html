@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/estilos.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+
+    <title>Proyecto 2</title>
+  </head>
+  <body>
+    <!-- header de la pagina -->
+    <div class="container">
+      <header>
+        <h1>PIZZAMANIA RESTAURANT</h1>
+          <div>
+            <h2>MENU</h2>
+          </div>
+          
+          <div class="pizza">
+            <img src="/imagenes/menupizza.jpg" alt="imagen pizza">
+          
+          </div>
+      </header>
+
+      <main>
+
+      <!-- seccion 1 ingresar datos -->
+        <section>
+          <h2>ORDENE SU PIZZA AQUI</h2>
+            <div class="formulario-datos" id="cuadro">
+              <input type="hidden" name="id" id="id" />
+              <input type="text" placeholder="Nombre Cliente" id="nombre">
+              <input type="text" placeholder="Tipo Pizza" id="tipo">
+              <input type="number" placeholder="Tamaño Pizza" id="tamaño">
+              <input type="text" placeholder="Extra" id="extra">
+              <input type="text" placeholder="Bebida" id="bebida">
+              <button class="btn agregar-orden" type="button" onclick="save()">Agregar Orden</button>
+            </div>
+        </section>  
+      
+      <!-- seccion 2 visualizacion de datos -->
+        <section>
+          <h2>ORDENES....</h2>
+            <div class="listado-tareas">
+              <table id="datatable" >
+                <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Cliente</th>
+                    <th>Pizza</th>
+                    <th>Tamaño</th>
+                    <th>Extra</th>
+                    <th>Bebida</th>
+                    <th>Editar</th>
+                    <th>Borrar</th>
+                  </tr>
+                </thead>
+                <tbody id="table"></tbody>
+              </table>
+            </div>
+        </section>
+
+      </main>
+     
+      <footer>
+
+        <h1>adios</h1>
+
+      </footer>
+
+    </div>
+
+    <script src="proceso.js"></script>
+    <script>
+      proceso();
+    </script>
+    <script>
+      function clearData() {
+        document.getElementById("borrar").reset();
+        document.getElementById("id").value = "";
+      }
+    </script>
+    
+  </body>
+</html>
