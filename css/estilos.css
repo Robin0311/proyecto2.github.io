@@ -1,0 +1,105 @@
+body {
+  background-color: #050505;
+  color: rgba(241, 239, 239, 0.9);
+  font-family: "Bungee Spice", cursive;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 90em;
+  margin: 1.87em auto; 
+  font-size: 25px;
+}
+
+.pizza {
+    height: 25em;
+    width: 28em;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+
+.container h1,h2 {
+  text-align: center;
+  margin: 1.87em;
+}
+
+.formulario-datos {
+  display: block;
+  width: 50%;
+  margin: 1.87em auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-datos input {
+  margin: 1em 0;
+  /* line-height: 48px; */
+  background: none;
+  outline: 1px solid gray;
+  border: 0;
+  color: white;
+  font-size: 1em;
+}
+
+.formulario-datos input:active {
+  border-bottom: 0.5px solid dodgerblue;
+}
+
+.formulario-datos input:focus {
+  border-bottom: 0.5px solid dodgerblue;
+}
+
+.agregar-orden{
+  background-color: rgba(255, 0, 0, 0.548);
+  font-family: "Bungee Spice", cursive;
+  border-radius: 20px;
+  
+}
+
+td{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  border: 1px solid orange;
+  font-size: medium;
+}
+
+
+.listado-tareas {
+  display: flex;
+  flex-direction: column;
+  height: 1em;
+
+}
+
+.icono{
+    color: tomato;
+    cursor: pointer;
+}
+
+footer{
+  background-color: orange;
+  text-align: center;
+  margin-top: auto;
+
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .container{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .container{
+        font-size: 6px;
+    }
+}
